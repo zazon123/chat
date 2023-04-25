@@ -19,7 +19,7 @@
 	<button onclick="sendMessage()">Send</button>
 	
 	<script>
-		var socket = new WebSocket("ws://localhost:8080");
+		var socket = new WebSocket("ws://echo.websocket.org");
 		
 		socket.onopen = function() {
 			console.log("Connected to server.");
